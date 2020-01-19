@@ -77,7 +77,7 @@ public class MongoOperator {
         return listOfObjects;
     }
 
-    public List getListOfMongoObjects(int objectsAmount) {
+    public String getListOfMongoObjects(int objectsAmount) {
         var listOfMongoObjects = new ArrayList<String>();
 
 
@@ -102,7 +102,7 @@ public class MongoOperator {
 //            listOfMongoObjects.add(o.toString());
 //            return listOfMongoObjects;
 //        }
-        return listOfMongoObjects;
+        return listOfMongoObjects.toString();
     }
 
 

@@ -67,7 +67,7 @@ public class RequestHandler {
         Blocking
                 .get(()->new MongoOperator()
                         .getListOfMongoObjects(Integer.parseInt(context.getPathTokens().get("number"))))
-                .then(value->context.render(Jackson.json(value)));
+                .then(value->context.render(value));
     }
     public void getCsvString(Context context){
         Blocking
